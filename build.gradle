@@ -19,8 +19,9 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
+        jcenter() // Si estás utilizando dependencias más antiguas
+        maven { url 'https://jitpack.io' } // Necesario para algunas librerías específicas
     }
 }
 
